@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Camiseta negra",
+    "description": "Remera de algodón",
+    "code": "R001",
+    "price": 2500,
+    "status": true,
+    "stock": 30,
+    "category": "ropa",
+    "thumbnails": [
+      "foto1.jpg"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Pantalón de jean",
+    "description": "Pantalón azul de jean con corte clásico",
+    "code": "P001",
+    "price": 5900,
+    "status": true,
+    "stock": 15,
+    "category": "ropa",
+    "thumbnails": [
+      "foto2.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Campera deportiva",
+    "description": "Campera liviana impermeable",
+    "code": "C001",
+    "price": 9500,
+    "status": true,
+    "stock": 8,
+    "category": "abrigo",
+    "thumbnails": [
+      "foto4.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Gorra deportiva",
+    "description": "Gorra de tela con visera curva",
+    "code": "G001",
+    "price": 1800,
+    "status": true,
+    "stock": 25,
+    "category": "accesorios",
+    "thumbnails": [
+      "foto5.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Buzo con capucha",
+    "description": "Buzo de algodón frizado con bolsillo delantero",
+    "code": "B001",
+    "price": 8200,
+    "status": true,
+    "stock": 12,
+    "category": "abrigo",
+    "thumbnails": [
+      "foto6.jpg"
+    ]
+  }
+]
