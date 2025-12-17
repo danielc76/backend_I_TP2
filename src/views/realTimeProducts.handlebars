@@ -1,0 +1,69 @@
+<!--
+Vista para la gestión de productos en tiempo real.
+Esta vista trabaja exclusivamente con WebSockets (socket.io).
+
+Desde esta vista puedo:
+- Visualizar el listado de productos
+- Crear productos nuevos
+- Eliminar productos existentes
+
+Las actualizaciones se reflejan automáticamente en pantalla
+sin necesidad de recargar la página.
+-->
+
+<h2>Productos en tiempo real</h2>
+
+<!-- ========================================================= -->
+<!-- Formulario de creación de productos -->
+<!-- ========================================================= -->
+<!--
+Este formulario permite crear un producto nuevo.
+NO envía datos por HTTP.
+Los datos se capturan desde JavaScript y se envían
+al servidor mediante WebSockets (socket.emit).
+-->
+<form id="formProducto">
+    <input type="text" name="title" placeholder="Título" required>
+    <input type="text" name="description" placeholder="Descripción" required>
+    <input type="number" name="price" placeholder="Precio" required>
+    <input type="number" name="stock" placeholder="Stock" required>
+    <input type="text" name="category" placeholder="Categoría" required>
+
+    <button type="submit">Agregar producto</button>
+</form>
+
+<hr>
+
+<!-- ========================================================= -->
+<!-- Listado de productos -->
+<!-- ========================================================= -->
+<!--
+Este contenedor se utiliza para mostrar el listado de productos.
+Comienza vacío y se completa dinámicamente desde JavaScript
+cuando el servidor envía los productos por WebSockets.
+
+IMPORTANTE:
+En esta vista NO se usa Handlebars para renderizar productos,
+ya que toda la lógica de renderizado se maneja en tiempo real
+desde el cliente.
+-->
+<ul id="listaProductos"></ul>
+
+<!-- ========================================================= -->
+<!-- Scripts -->
+<!-- ========================================================= -->
+
+<!--
+Script del cliente de Socket.io.
+Permite establecer la conexión WebSocket con el servidor.
+-->
+<script src="/socket.io/socket.io.js"></script>
+
+<!--
+Script con la lógica de tiempo real.
+Se encarga de:
+- Escuchar eventos enviados desde el servidor
+- Dibujar el listado de productos
+- Enviar eventos para crear y eliminar productos
+-->
+<script src="/js/realtime.js"></script>

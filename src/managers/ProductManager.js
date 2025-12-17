@@ -1,11 +1,3 @@
-/// NOTA IMPORTANTE, PENSÉ QUE LA FECHA DE ENTREGA ERA EL LUNES 15/12, RECIEN VI QUE SE ME VENCIÓ, 
-// ENTREGO EL TP1 NUEVAMENTE Y A LA BREVEDAD LO MEJORO PARA QUE LO PUEDAN CORREGIR, GRACIAS!
-
-
-
-
-
-
 // GESTOR DE products.json
 /* ===========================================================
  Esta clase ProductManager es la lógica interna del backend para gestionar los productos

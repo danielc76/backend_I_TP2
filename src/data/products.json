@@ -63,5 +63,13 @@
     "thumbnails": [
       "foto6.jpg"
     ]
+  },
+  {
+    "id": 7,
+    "title": "Campera nautica",
+    "description": "Campera nautica de invierno",
+    "price": 21515,
+    "stock": 3,
+    "category": "camperas"
   }
 ]

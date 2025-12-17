@@ -1,9 +1,3 @@
-/// NOTA IMPORTANTE, PENSÉ QUE LA FECHA DE ENTREGA ERA EL LUNES 15/12, RECIEN VI QUE SE ME VENCIÓ, 
-// ENTREGO EL TP1 NUEVAMENTE Y A LA BREVEDAD LO MEJORO PARA QUE LO PUEDAN CORREGIR, GRACIAS!
-
-
-
-
 // ===========================================================
 // API de productos - Gestiona las rutas de Productos
 // -----------------------------------------------------------

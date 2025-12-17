@@ -1,0 +1,22 @@
+<!-- 
+Este archivo define el partial "header".
+Los partials son fragmentos de HTML reutilizables que se pueden incluir
+en distintas vistas o layouts sin repetir código. 
+Me sirve para tener un header único, no repetís HTML en cada vista y
+Cualquier cambio se hace en un solo archivo
+-->
+
+<!-- NOTA: En esta entrega no implenté lo del carrito aún porque no lo pedían, pero en la próxima mejora lo agrego -->
+
+<header>
+    <h1>Emprenred - Mi tienda favorita</h1>
+
+    <!-- 
+    Barra de navegación.
+    Cada enlace apunta a una ruta que las maneja el router de vistas.
+    -->
+    <nav>
+        <a href="/productos">Productos</a>
+        <a href="/realtimeproducts">Productos en tiempo real</a>
+    </nav>
+</header>

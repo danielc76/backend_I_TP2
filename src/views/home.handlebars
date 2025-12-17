@@ -1,0 +1,27 @@
+<!-- 
+Esta vista representa la página principal del sitio.
+Se utiliza para mostrar el listado de productos disponibles.
+Recibe los datos desde el router de vistas mediante res.render().
+-->
+
+<h2>{{titulo}}</h2>
+
+<!-- 
+Condicional que verifica si existen productos para mostrar.
+La variable "hayProductos" llega desde el backend.
+-->
+{{#if hayProductos}}
+    <ul>
+        <!-- 
+        Itera sobre el arreglo de productos recibido.
+        Cada elemento del array se accede con "this".
+        -->
+        {{#each productos}}
+            <li>
+                <strong>{{this.title}}</strong> - ${{this.price}}
+            </li>
+        {{/each}}
+    </ul>
+{{else}}   
+    <p>No hay productos disponibles</p>
+{{/if}}
